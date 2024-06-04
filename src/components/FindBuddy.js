@@ -83,7 +83,7 @@ const [users, setUsers] = useState([]);
               color="primary"
               size="large"
               onClick={() => {
-                if (courseOptions) {
+                if (course) {
                   findUsers(course);
                 } else {
                   alert("Please select a course");
@@ -99,10 +99,9 @@ const [users, setUsers] = useState([]);
 
             {users.map((user) => (
               <Box key={user._id} mt={2} p={2} border="1px solid #ccc" borderRadius={4}>
-                <Typography variant="subtitle1">{user.email}</Typography>
-                <Typography>Name: {user.fullName}</Typography>
-                <Typography>Username: {user.userName}</Typography>
-                {/* <Typography>Courses: {user.courses}</Typography> */}
+                <Typography variant="subtitle1">{user.fullName}</Typography>
+                <Typography>Email: {user.email}</Typography>
+                {/*<Typography>Courses: {user.courses}</Typography> */}
                 {/* <Typography>Groups: {user.myGroups}</Typography> */}
                 {/* <Typography>Description: {user.description}</Typography> */}
               </Box>

@@ -212,10 +212,6 @@ const updateUser = async (req, res) => {
 
 const getUsersbyCourse = async (req, res) => {
     console.log("Function getUsersbyCourse called");
-    console.log("Here");
-    console.log("Here");
-    console.log("Here");
-    console.log(course);
     const { course } = req.body;
     console.log("Course received:", course);
   
